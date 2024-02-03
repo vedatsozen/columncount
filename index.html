@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLUMN COUNT PRACTICI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<input type="range" id="range" min="100" max="1000" oninput="changeColumn()">
+<h2 id="columnWidthh1"></h2>
+<p>You can change column count of div with range input</p>
+
+<div id="div">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales felis vel urna posuere, ac scelerisque lorem posuere. Vestibulum quis ultrices sapien, sed dignissim odio. Nullam et efficitur turpis. Suspendisse laoreet sem non sem rhoncus fermentum. Nulla quis sapien nulla. Vivamus viverra leo non felis hendrerit pharetra. Suspendisse vehicula mi et consequat scelerisque. Curabitur commodo fermentum turpis. Duis eu tincidunt arcu. Curabitur eget pharetra erat, non facilisis erat. Sed porta metus non ex posuere blandit in ac ante.
+
+Integer id lobortis est. Nunc et sem tortor. Nunc scelerisque sem fermentum velit accumsan, elementum dignissim nisl pulvinar. Duis sit amet eleifend nisi. Phasellus a elementum tellus, nec egestas urna. Proin consequat malesuada lacinia. Donec in pellentesque odio. Donec id dictum augue, eget ultrices ex. Praesent porta metus a rutrum commodo. Pellentesque eget mauris lorem. Morbi cursus faucibus fringilla.
+
+Vivamus et elit at lacus pharetra consectetur eget ac nisi. Mauris sed diam vehicula, tempus leo commodo, iaculis orci. Duis mattis egestas orci. Morbi auctor neque in blandit mollis. Praesent enim lectus, bibendum a venenatis sit amet, tincidunt dignissim nunc. Phasellus scelerisque in metus id vulputate. Donec porttitor nisl non efficitur venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi pellentesque, elit ut efficitur hendrerit, erat felis aliquet mauris, sed viverra eros dui eu dui. Quisque maximus consequat mi in pellentesque. Pellentesque mollis luctus erat, a iaculis libero feugiat ac.
+
+Phasellus posuere eros finibus, ultricies lacus eget, varius quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam semper elit vel egestas aliquam. In vitae quam sollicitudin, interdum augue ut, tempus dui. Pellentesque vitae lacus ante. Proin ultricies scelerisque molestie. Nam convallis in tellus non imperdiet. Sed ipsum mauris, iaculis ut eleifend nec, accumsan sed ligula. Maecenas sit amet suscipit leo, blandit tempor quam. Nunc vehicula fringilla nunc, et luctus orci faucibus eget. Quisque est neque, commodo sed sapien id, pharetra tristique dui. Nunc ut dui malesuada, egestas lacus quis, mollis felis. Maecenas suscipit ligula sed mauris rutrum, et viverra orci volutpat. Suspendisse varius porta eleifend.
+
+Maecenas gravida rhoncus enim at sollicitudin. Pellentesque at sem sollicitudin, varius lorem ac, rhoncus ipsum. Phasellus interdum erat ac arcu facilisis venenatis. In hac habitasse platea dictumst. Sed lacinia risus in quam eleifend lacinia. Donec bibendum metus in sem dictum, a interdum velit fringilla. Fusce id maximus est. Donec ac nisi diam.
+</div>
+
+<script>
+
+document.getElementById("columnWidthh1").innerHTML = "Column Width: 0px" ;
+
+function changeColumn() {
+
+let mycolumnWidth = document.getElementById("range").value;
+
+let mydiv = document.getElementById("div");
+
+mydiv.style.columnWidth = mycolumnWidth + "px";
+
+document.getElementById("columnWidthh1").innerHTML = "Column Width: " + mycolumnWidth + "px"
+
+}
+</script>
+</body>
+</html>
